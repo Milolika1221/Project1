@@ -1,2 +1,32 @@
 fdgggggggggdgdfdfgrgw
 Канцер Кристина
+
+
+#include <iostream>
+using namespace :: std;  
+#include <windows.h> 
+void main()//заголовок функции
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int n, k = 0, s = 0, N, i = 0;
+	cout << "Введите числовую последовательность через пробел. В конце нажмите Enter.\n"; 
+	do
+	{
+		cin >> n;
+		i += 1; 
+		if (n < -23)
+		{
+			k += 1;
+			s += n;
+			if (k == 5)
+				N = i;
+		}
+
+	} while (getchar() != '\n');
+	if (k < 5) 
+		cout << "К-во чисел меньше пяти, "; 
+	else
+		cout << "N = " << N << ","; 
+	cout << " k = " << k << ", " << "s = " << s;
+}
