@@ -2,32 +2,16 @@ fdgggggggggdgdfdfgrgw
 Канцер Кристина
 
 
-#include <iostream>
-using namespace :: std;  
-#include <windows.h>
-
+#include <stdio.h> 
+#include <windows.h> 
 void main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	int n, k = 0, s = 0, N, i = 0;
-	cout << "Введите числовую последовательность через пробел. В конце нажмите Enter.\n";
-	do
-	{
-		cin >> n;
-		i += 1;
-		if (n < -23)
-		{
-			k += 1;
-			s += n;
-			if (k == 5)
-				N = i;
-		}
-
-	} while (getchar() != '\n');
-	if (k < 5)
-		cout << "К-во чисел меньше пяти, "; 
-	else
-		cout << "N = " << N << ","; 
-	cout << " k = " << k << ", " << "s = " << s; текста на экран
+	const double pi = 3.14;
+	double R, S;
+	printf("Введите значение радиуса ");
+	scanf("%lf", &R);
+	S = pi * R * R;
+	printf("Площадь круга = %lf", S);
 }
